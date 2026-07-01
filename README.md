@@ -1,62 +1,55 @@
-# Vishwanth Sri Kodali — Portfolio
+# Hi, I'm Vishwanth Sri Kodali 👋
 
-A static, single-page portfolio site. No build step, no framework — just
-`index.html`, `style.css`, and `script.js`. That means it can be hosted for
-free on GitHub Pages with zero configuration.
+AI Engineer building stateful, multi-agent LLM systems — from architecture and
+prompt design to containerized, production deployment.
 
-## Before you publish
+- 🧠 Currently building applied AI systems in **AI Labs @ I2E Consulting** (since May 2026)
+- 🛠️ Previously shipped production AI backends as **AI Engineer / Python Engineer @ IntelligenceIndia.com Limited (IICL)**
+- 🎯 Focus: agent orchestration with **LangGraph**, structured tool calling via **MCP**, and grounding responses with **RAG**
+- 🎓 B.Tech (Honors), Computer Science & Engineering — Prasad V Potluri Siddhartha Institute of Technology (CGPA 8.9/10)
+- 📍 Hyderabad, India
 
-1. Open `index.html` and search for `id="linkedin-link"`. Replace the `href="#"`
-   with your real LinkedIn URL, and update the visible text.
-2. Double-check the I2E Consulting and IICL dates/descriptions in the
-   `#experience` section — I filled in reasonable text based on what you told
-   me, but you know the real day-to-day best.
-3. Optional: swap `vishwanthkodali@gmail.com` / phone number if you'd rather
-   not show them publicly, and use a contact form or LinkedIn instead.
+---
 
-## Hosting for free — GitHub Pages (recommended)
+### What I work on
 
-Since your GitHub username is already `VishwanthKodali`, the easiest path is
-a **user site**, which gets a clean URL: `https://vishwanthkodali.github.io`
+I care about LLM systems that know when they're wrong — explicit state
+transitions, structured tool schemas, and confidence-aware fallback logic
+instead of one model trying to do everything in a single pass.
 
-1. Create a new repository on GitHub named **exactly**:
-   `VishwanthKodali.github.io`
-2. Push these three files to the root of that repository:
-   ```
-   git init
-   git add index.html style.css script.js README.md
-   git commit -m "Portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/VishwanthKodali/VishwanthKodali.github.io.git
-   git push -u origin main
-   ```
-3. Go to the repo → **Settings → Pages** → under "Build and deployment",
-   set Source to **Deploy from a branch**, branch `main`, folder `/root`.
-4. Wait ~1 minute. Your site goes live at:
-   `https://vishwanthkodali.github.io`
+- **Multi-Agent Project Management Intelligence System** — a stateful
+  LangGraph system separating planning, retrieval, execution, and validation,
+  with MCP-based tool calling and a RAG pipeline grounding responses in real
+  project data. Deployed via FastAPI + Docker.
+- **icogintio.ai** — enterprise AI workflow platform with modular FastAPI
+  services, retrieval grounding, schema validation, and retry-based reliability.
+- **[AI Game Creator](https://github.com/VishwanthKodali/AIgamecreator)** — an
+  LLM system that generates Python game logic and iteratively repairs its own
+  runtime errors.
 
-No build tools, no server, no cost — GitHub serves the static files directly.
+---
 
-### If you'd rather keep it as a project (not user) site
-Name the repo anything else (e.g. `portfolio`), same steps in Settings → Pages,
-and it'll be live at `https://vishwanthkodali.github.io/portfolio`.
+### Stack
 
-## Alternative free hosts (also zero-config for static files)
+**LLM & GenAI:** LangGraph · LangChain · MCP Tool Calling · Prompt Engineering · RAG
+**Backend:** Python · FastAPI · REST APIs
+**Architecture:** Agent Orchestration · Stateful Workflows · Tool Schemas
+**Data:** Embeddings · Vector Search · ML Fundamentals
+**Deployment:** Docker · Containerized Services · AWS EC2
+**Tools:** Git
 
-- **Vercel** — `vercel.com`, connect the GitHub repo, deploy with defaults.
-  Gives you a `*.vercel.app` URL and easy custom domain support later.
-- **Netlify** — `netlify.com`, drag-and-drop the project folder directly in
-  their dashboard (no git needed), or connect the repo for auto-deploys.
-- **Cloudflare Pages** — `pages.cloudflare.com`, same connect-repo flow, fast
-  global CDN.
+---
 
-All four are free for a personal portfolio at this scale. GitHub Pages is the
-simplest since the code is already going to live on GitHub anyway.
+### Get in touch
 
-## Local preview
+- 📧 [vishwanthkodali@gmail.com](mailto:vishwanthkodali@gmail.com)
+- 📱 +91 94941 01492
+- 💼 [LinkedIn](https://www.linkedin.com/in/kodali-vishwanth-sri-bb537524a/) 
+- 🌐 [Portfolio] (https://vishwanthkodali.github.io/) 
 
-Just open `index.html` directly in a browser, or run a tiny local server:
-```
-python3 -m http.server 8000
-```
-then visit `http://localhost:8000`.
+<!--
+Tip: this file is meant for the special GitHub "profile README" repo —
+create a repo named exactly `VishwanthKodali` (matching your username) and
+put this file at its root as README.md. GitHub will show it automatically
+on your profile page at github.com/VishwanthKodali.
+-->
