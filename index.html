@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishwanth Sri Kodali — AI Engineer</title>
+<meta name="description" content="AI Engineer building stateful, multi-agent LLM systems with LangGraph, MCP tool calling, and RAG.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <a href="#top" class="nav-mark">VSK</a>
+  <nav class="nav-links">
+    <a href="#work">work</a>
+    <a href="#experience">experience</a>
+    <a href="#stack">stack</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">let's talk</a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow">// ai engineer — hyderabad, india</p>
+      <h1>I build LLM systems<br>that <span class="accent">know when<br>they're wrong.</span></h1>
+      <p class="hero-sub">
+        Multi-agent architectures with explicit state, structured tool calling, and
+        retrieval grounding — designed so failure is caught, not shipped.
+        1+ year turning agent prototypes into production FastAPI services.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See the work</a>
+        <a href="mailto:vishwanthkodali@gmail.com" class="btn btn-ghost">vishwanthkodali@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="hero-graph" aria-hidden="true">
+      <svg viewBox="0 0 520 460" id="graph-svg">
+        <!-- feedback edge (dashed, fallback loop) -->
+        <path id="edge-feedback" class="edge edge-dashed" d="M 380 360 C 480 260, 480 120, 190 90" fill="none"/>
+        <!-- main sequence edges -->
+        <path id="edge-1" class="edge" d="M 130 90 L 380 90" fill="none"/>
+        <path id="edge-2" class="edge" d="M 400 115 C 400 170, 400 220, 400 270" fill="none"/>
+        <path id="edge-3" class="edge" d="M 375 335 C 300 380, 220 385, 160 355" fill="none"/>
+
+        <!-- traveling pulses -->
+        <circle class="pulse" r="4">
+          <animateMotion dur="3.2s" repeatCount="indefinite" begin="0s"
+            path="M 130 90 L 380 90 C 400 90 400 170 400 220 C 400 250 400 260 400 270 C 400 300 390 325 375 335 C 300 380 220 385 160 355"/>
+        </circle>
+        <circle class="pulse pulse-fallback" r="3.5">
+          <animateMotion dur="2.6s" repeatCount="indefinite" begin="1.4s"
+            path="M 380 360 C 480 260, 480 120, 190 90"/>
+        </circle>
+
+        <!-- nodes -->
+        <g class="node" id="node-plan" transform="translate(100,90)">
+          <rect x="-46" y="-24" width="92" height="48" rx="6"/>
+          <text x="0" y="5" text-anchor="middle">PLAN</text>
+        </g>
+        <g class="node" id="node-retrieve" transform="translate(400,90)">
+          <rect x="-58" y="-24" width="116" height="48" rx="6"/>
+          <text x="0" y="5" text-anchor="middle">RETRIEVE</text>
+        </g>
+        <g class="node" id="node-execute" transform="translate(400,300)">
+          <rect x="-58" y="-24" width="116" height="48" rx="6"/>
+          <text x="0" y="5" text-anchor="middle">EXECUTE</text>
+        </g>
+        <g class="node node-validate" id="node-validate" transform="translate(130,378)">
+          <rect x="-58" y="-24" width="116" height="48" rx="6"/>
+          <text x="0" y="5" text-anchor="middle">VALIDATE</text>
+        </g>
+
+        <text class="graph-caption" x="260" y="435" text-anchor="middle">state graph — retry on low confidence</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SUMMARY STRIP -->
+  <section class="strip">
+    <div class="strip-item">
+      <span class="strip-num">1+ yr</span>
+      <span class="strip-label">shipping production AI systems</span>
+    </div>
+    <div class="strip-item">
+      <span class="strip-num">LangGraph</span>
+      <span class="strip-label">stateful agent orchestration</span>
+    </div>
+    <div class="strip-item">
+      <span class="strip-num">MCP</span>
+      <span class="strip-label">structured tool-calling interfaces</span>
+    </div>
+    <div class="strip-item">
+      <span class="strip-num">RAG</span>
+      <span class="strip-label">embeddings + vector grounding</span>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <p class="eyebrow">// selected projects</p>
+    <h2>Systems that plan, act, and check their own work.</h2>
+
+    <div class="cards">
+
+      <article class="card card-featured">
+        <div class="card-top">
+          <span class="tag">flagship</span>
+          <span class="mono-tag">langgraph · mcp · rag · fastapi</span>
+        </div>
+        <h3>Multi-Agent Project Management Intelligence System</h3>
+        <p>
+          A stateful multi-agent system that separates planning, retrieval, execution, and
+          validation into distinct LangGraph nodes — instead of one model trying to do everything
+          in a single pass.
+        </p>
+        <ul class="bullet-list">
+          <li>MCP-based tool calling with explicit schemas for controlled action invocation</li>
+          <li>RAG pipeline using embeddings and vector search to ground responses in real project data</li>
+          <li>Confidence-aware fallback logic that routes low-confidence outputs back for re-validation</li>
+          <li>Deployed as a production-ready service via FastAPI + Docker</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="tag tag-muted">office project</span>
+          <span class="mono-tag">fastapi · workflow automation</span>
+        </div>
+        <h3>icogintio.ai — Enterprise AI Workflow Platform</h3>
+        <p>
+          Modular FastAPI services that bring LLM reasoning into enterprise operations, built
+          for traceability as much as intelligence.
+        </p>
+        <ul class="bullet-list">
+          <li>Structured inputs, tool execution, and state-aware pipelines</li>
+          <li>Retrieval grounding and schema validation to improve accuracy</li>
+          <li>Logging, structured exception handling, and retry strategies for reliability</li>
+          <li>Containerized deployment aligned with enterprise scalability needs</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="tag tag-muted">personal project</span>
+          <span class="mono-tag">code generation · validation loops</span>
+        </div>
+        <h3>AI Game Creator</h3>
+        <p>
+          An LLM-powered system that writes and repairs its own game logic — the model generates
+          Python, runs it, reads the error, and tries again.
+        </p>
+        <ul class="bullet-list">
+          <li>Structured prompt pipelines that generate executable game logic</li>
+          <li>Iterative validation loops that catch runtime errors and refine the script</li>
+          <li>Separate modules for generation, validation, execution, and refinement</li>
+        </ul>
+        <a class="card-link" href="https://github.com/VishwanthKodali/AIgamecreator" target="_blank" rel="noopener">
+          view source on GitHub →
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <p class="eyebrow">// experience</p>
+    <h2>Where this was built.</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-row">
+        <div class="timeline-when">
+          <span class="mono-tag">may 2026 — present</span>
+        </div>
+        <div class="timeline-body">
+          <h3>AI Engineer <span class="dim">· AI Labs, I2E Consulting</span></h3>
+          <p class="timeline-note">Hyderabad</p>
+          <p class="timeline-desc">
+            Currently building applied AI systems within I2E Consulting's AI Labs, extending the
+            same agentic and RAG foundations from prior work into new production use cases.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="timeline-when">
+          <span class="mono-tag">feb 2025 — apr 2026</span>
+        </div>
+        <div class="timeline-body">
+          <h3>AI Engineer / Python Engineer <span class="dim">· IntelligenceIndia.com Limited (IICL)</span></h3>
+          <p class="timeline-note">Hyderabad</p>
+          <ul class="bullet-list">
+            <li>Designed and deployed LLM-assisted backend services integrating AI reasoning into production systems</li>
+            <li>Engineered agent-driven workflows with explicit state transitions and structured tool orchestration</li>
+            <li>Implemented validation layers, retry logic, and error handling to improve API reliability</li>
+            <li>Containerized AI services using Docker for reproducible cross-environment deployment</li>
+            <li>Collaborated cross-functionally to translate product requirements into scalable AI features</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="timeline-when">
+          <span class="mono-tag">oct 2021 — mar 2025</span>
+        </div>
+        <div class="timeline-body">
+          <h3>B.Tech (Honors), Computer Science &amp; Engineering</h3>
+          <p class="timeline-note">Prasad V Potluri Siddhartha Institute of Technology · CGPA 8.9 / 10</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <p class="eyebrow">// technical stack</p>
+    <h2>Tools, in the order I reach for them.</h2>
+
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h4>LLM &amp; GenAI</h4>
+        <div class="chips">
+          <span>LangGraph</span><span>LangChain</span><span>MCP Tool Calling</span>
+          <span>Prompt Engineering</span><span>RAG</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Architecture</h4>
+        <div class="chips">
+          <span>Agent Orchestration</span><span>Stateful Workflows</span><span>Tool Schemas</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Backend</h4>
+        <div class="chips">
+          <span>Python</span><span>FastAPI</span><span>REST APIs</span><span>C++</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Data</h4>
+        <div class="chips">
+          <span>Embeddings</span><span>Vector Search</span><span>ML Fundamentals</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Deployment &amp; Cloud</h4>
+        <div class="chips">
+          <span>Docker</span><span>Containerized Services</span><span>AWS EC2</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Tools</h4>
+        <div class="chips">
+          <span>Git</span><span>Version Control</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <p class="eyebrow">// contact</p>
+    <h2>Building an agent system?<br>I'd like to hear about it.</h2>
+    <div class="contact-grid">
+      <a href="mailto:vishwanthkodali@gmail.com" class="contact-item">
+        <span class="contact-label">email</span>
+        <span class="contact-value">vishwanthkodali@gmail.com</span>
+      </a>
+      <a href="tel:+919494101492" class="contact-item">
+        <span class="contact-label">phone</span>
+        <span class="contact-value">+91 94941 01492</span>
+      </a>
+      <a href="https://github.com/VishwanthKodali" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-label">github</span>
+        <span class="contact-value">github.com/VishwanthKodali</span>
+      </a>
+      <a href="#" target="_blank" rel="noopener" class="contact-item" id="linkedin-link">
+        <span class="contact-label">linkedin</span>
+        <span class="contact-value">add your linkedin url →</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>Vishwanth Sri Kodali</span>
+  <span class="dim">Hyderabad, India — built with vanilla HTML/CSS/JS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
